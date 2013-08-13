@@ -12,16 +12,18 @@ Usage:
 
 3. Make executable
 
-    `$ chmod u+x ITIL_quiz.py`
+    `$ chmod u+x ITIL_Quiz.py`
 
 4. Run the quiz
 
-    `$ python ITIL_quiz.py ITIL_Questions`
+    `$ python ITIL_Quiz.py ITIL_Questions`
 
 5. Follow the on-screen instructions
 
 For help use:
 
-    $ python ITIL_quiz.py --help
+    $ python ITIL_Quiz.py --help
 
+Use the `-s` flag to shuffle the question order:
 
+    $ python ITIL_Quiz.py -s ITIL_Questions
