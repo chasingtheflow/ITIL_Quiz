@@ -6,7 +6,7 @@ Usage:
 
 1. First clone the repository to a directory of your choice.
 
-    'git clone https://github.com/chasingtheflow/ITIL_Quiz.git'
+    `git clone https://github.com/chasingtheflow/ITIL_Quiz.git`
 
 2. In your terminal, cd to the ITIL_Quiz directory
 
