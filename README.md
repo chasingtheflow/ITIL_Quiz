@@ -24,6 +24,6 @@ For help use:
 
     $ python ITIL_Quiz.py --help
 
-Use the `-s` flag to shuffle the question order:
+Use the `-s` or `--shuffle` flag to shuffle the question order:
 
     $ python ITIL_Quiz.py -s ITIL_Questions
