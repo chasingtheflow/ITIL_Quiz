@@ -1,9 +1,9 @@
 ITIL Quiz
-------------------------------
+=========
 A little python utility for ITIL v3 Foundations practice exams.
 
 Installation
-============
+------------
 In a terminal:
 
 1. Clone the repository to a directory of your choice:
@@ -35,7 +35,7 @@ Use the `-s` or `--shuffle` flag to shuffle the question order:
     python ITIL_Quiz.py -s ITIL_Questions
 
 Creating Quizzes
-================
+----------------
 Creating your own quiz files is relatively straightforward. Questions are broken down into a few different parts:
 
     * The questions itself
