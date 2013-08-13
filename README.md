@@ -8,6 +8,8 @@ In a terminal:
 
     `git clone https://github.com/chasingtheflow/ITIL_Quiz.git`
 
+   or [download th zip file][https://github.com/chasingtheflow/ITIL_Quiz/archive/master.zip] and unzip.
+
 2. cd to the ITIL_Quiz directory:
 
     `cd path/to/ITIL_Quiz/`
