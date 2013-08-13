@@ -6,21 +6,21 @@ In a terminal:
 
 1. Clone the repository to a directory of your choice:
 
-    `git clone https://github.com/chasingtheflow/ITIL_Quiz.git`
+        git clone https://github.com/chasingtheflow/ITIL_Quiz.git
 
-   or [download th zip file][https://github.com/chasingtheflow/ITIL_Quiz/archive/master.zip] and unzip.
+   or [download the zip file](https://github.com/chasingtheflow/ITIL_Quiz/archive/master.zip "ITIL Quiz") and unzip.
 
 2. cd to the ITIL_Quiz directory:
 
-    `cd path/to/ITIL_Quiz/`
+        cd path/to/ITIL_Quiz/
 
 3. Make executable:
 
-    `chmod u+x ITIL_Quiz.py`
+        chmod u+x ITIL_Quiz.py
 
 4. Run the quiz:
 
-    `python ITIL_Quiz.py ITIL_Questions`
+        python ITIL_Quiz.py ITIL_Questions
 
 5. Follow on-screen instructions.
 
