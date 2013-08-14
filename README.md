@@ -36,7 +36,7 @@ Use the `-s` or `--shuffle` flag to shuffle the question order:
 
 Creating Quizzes
 ----------------
-Creating your own quiz files is relatively straightforward. Questions are broken down into a few different parts:
+Creating your own quiz file is relatively straightforward. Questions are broken down into a few different parts:
 * The questions itself
 * Any options associated with the question [optional]
 * Possible answers
