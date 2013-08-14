@@ -172,14 +172,15 @@ code {
 
 pre {
   padding: 20px;
-  background: #fff;
+  background: #dfdfdf;
   text-shadow: none;
   overflow: auto;
+  border-radius: 10px;
   border: solid 1px #f2f2f2;
 }
 pre code {
   color: #2879d0;
-  background-color: #fff;
+  background-color: #dfdfdf;
   border: none;
   padding: 0;
 }
