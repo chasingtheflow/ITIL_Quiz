@@ -176,6 +176,7 @@ pre {
   text-shadow: none;
   overflow: auto;
   border-radius: 10px;
+  moz-border-radius: 10px;
   border: solid 1px #f2f2f2;
 }
 pre code {
