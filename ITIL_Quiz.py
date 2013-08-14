@@ -22,13 +22,13 @@ class Quiz:
         self.should_shuffle = args.shuffle
         self.parse_quiz_file(args.quiz[0])
         self.instructions = "\n" + \
-        " Welcome to the ITIL Quiz game!\n\n" + \
-        " This quiz will present you with 40 real ITIL Foundations exam\n" + \
-        " questions, followed by a summary of what you missed.\n\n" + \
-        " Enter the <a>, <s>, <d>, & <f> keys to submit your answer.\n" + \
-        " Enter <q> at any time to end the quiz.\n\n" + \
-        " Press <Enter> when you're ready to begin...\n"
-    
+            " Welcome to the ITIL Quiz game!\n\n" + \
+            " This quiz will present you with 40 ITIL Foundations exam\n" + \
+            " questions, followed by a summary of missed questions.\n\n" + \
+            " Enter the <a>, <s>, <d>, & <f> keys to submit your answer.\n" + \
+            " Enter <q> at any time to end the quiz.\n\n" + \
+            " Press <Enter> when you're ready to begin...\n"
+
     def parse_quiz_file(self, quiz_file):
         """Parse a quiz file"""
 
@@ -42,10 +42,14 @@ class Quiz:
 
             for line in question_file.readlines():
                 if line[0] == 'Q':
-                    # We're parsing a question
+                    # Parsing a question
                     question = line[3:-1].strip()
+                elif line[0] == "O":
+                    # Question options [not every question will have]
+                    options = [option.strip() for option
+                               in line[3:-1].split("|")]
                 elif line[0] in ['1', '2', '3', '4']:
-                    # We're parsing a possible answer
+                    # Parsing a possible answer
                     choices.append(line[3:-1].strip())
                 elif line[0] == 'A':
                     # The correct answer
@@ -53,16 +57,12 @@ class Quiz:
                 elif line[0] == "E":
                     # The answer explanation
                     explanation = line[3:-1].strip()
-                elif line[0] == "O":
-                    # Question options (not every question has)
-                    options = [option.strip() for option 
-                               in line[3:-1].split("|")]
-                elif question == None:
+                elif question is None:
                     # Parsed everything
                     break
                 else:
                     # Create the problem object and reset vars
-                    problem = Problem(question, choices, answer, 
+                    problem = Problem(question, choices, answer,
                                       explanation, options)
                     self.problems.append(problem)
                     question = None
@@ -71,7 +71,7 @@ class Quiz:
                     explanation = None
                     options = None
                     choices = []
-    
+
     def show_instructions(self):
         """Show instructions to the user"""
         clear_screen()
@@ -84,14 +84,16 @@ class Quiz:
         for problem in self.problems:
             yield problem
 
-    def get_user_input(self): # pylint: disable=I0011,R0201
+    def get_user_input(self):  # pylint: disable=I0011,R0201
         """Return the input from the user"""
         return raw_input(" ~> ")
 
     def print_missed_problem_summary(self):
         """Prints the results of the quiz"""
         missed_problems = [problem for problem in self.problems
-                           if problem.user_answered_incorrectly == True]
+                           if problem.user_answered_incorrectly is True]
+        unattempted_problems = [problem for problem in self.problems
+                                if problem.user_answered_incorrectly is None]
 
         clear_screen()
         print
@@ -100,15 +102,25 @@ class Quiz:
             missed_problem.print_result()
 
         missed_count = len(missed_problems)
+        unattempted_count = len(unattempted_problems)
         problem_count = len(self.problems)
-        correct_count = problem_count - missed_count
+        correct_count = problem_count - missed_count - unattempted_count
+        attempted_count = problem_count - unattempted_count
 
         score = correct_count / (problem_count + 0.0) * 100
 
-        print("\n Score: {} / {} Missed: {}  {}%\n").format(correct_count,
-                                                            problem_count,
-                                                            missed_count,
-                                                            score)
+        if unattempted_count > 0:
+            print("\n Score: {} / {} Missed: {}" +
+                  " Attempted: {} {}%\n").format(correct_count,
+                                                 problem_count,
+                                                 missed_count,
+                                                 attempted_count,
+                                                 score)
+        else:
+            print("\n Score: {} / {} Missed: {}  {}%\n").format(correct_count,
+                                                                problem_count,
+                                                                missed_count,
+                                                                score)
 
         if score == 100:
             print(" Damn, son. Nice work.")
@@ -121,7 +133,6 @@ class Quiz:
         else:
             print(" All your base are belong to us.\n" +
                   "\n Try\n     Try\n         Again.")
-
 
     def play(self):
         """Play the quiz game"""
@@ -145,7 +156,7 @@ class Quiz:
                                                  number_of_problems)
             print(str(problem) + "\n")
             user_input = self.get_user_input().upper()
-            
+
             while user_input not in keys:
                 clear_screen()
                 print("\n Problem {} of {}:").format(current_problem_number,
@@ -166,7 +177,7 @@ class Quiz:
             current_problem_number += 1
 
         self.print_missed_problem_summary()
-                
+
 
 class Problem:  # pylint: disable=I0011,R0902
     """An ITIL Problem object"""
@@ -178,12 +189,12 @@ class Problem:  # pylint: disable=I0011,R0902
         self.explanation = explanation
         self.options = options
         self.user_answer = None
-        self.user_answered_incorrectly = True
+        self.user_answered_incorrectly = None
         self.keys = [' A', ' S', ' D', ' F']
 
     def __str__(self):
         return self.question_string()
-    
+
     def print_result(self):
         """Print result."""
         print(self.question_string())
@@ -191,8 +202,8 @@ class Problem:  # pylint: disable=I0011,R0902
         print(" Correct Answer:  {}").format(self.keys[int(self.answer) - 1]
                                              .strip())
 
-        wrapper = textwrap.TextWrapper(initial_indent = " ",
-                                       subsequent_indent = " ",
+        wrapper = textwrap.TextWrapper(initial_indent=" ",
+                                       subsequent_indent=" ",
                                        width=80).wrap
 
         print
@@ -203,7 +214,7 @@ class Problem:  # pylint: disable=I0011,R0902
     def question_string(self):
         """Return human readable question string"""
         question_string = " " + self.question + "\n"
-        if self.options != None:
+        if self.options is not None:
             for index,  option in enumerate(self.options):
                 question_string += "  " + str(index + 1) + ". " + option + "\n"
 
@@ -214,25 +225,24 @@ class Problem:  # pylint: disable=I0011,R0902
         return question_string
 
 
-
 def clear_screen():
     """Clear the terminal screen"""
-    os.system('cls' if os.name=='nt' else 'clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def main():
     """Run the quizzer"""
-    parser = argparse.ArgumentParser(
-                    description='Practice ITIL v3 Foundations exams.')
+    parser = argparse.ArgumentParser(description=
+                                     'Practice ITIL v3 Foundations exams.')
     parser.add_argument('-s', '--shuffle',
-                         action='store_true',
-                         help='shuffle the order of the questions')
+                        action='store_true',
+                        help='shuffle the order of the questions')
     parser.add_argument('quiz', metavar='quiz', nargs=1,
-                         help='path to an ITIL quiz file')
+                        help='path to an ITIL quiz file')
     args = parser.parse_args()
     quizzer = Quiz(args)
     quizzer.play()
-    
+
 
 if __name__ == "__main__":
     main()
