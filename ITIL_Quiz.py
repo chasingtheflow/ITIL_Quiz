@@ -202,6 +202,7 @@ class Problem:  # pylint: disable=I0011,R0902
 
     def question_string(self):
         """Return human readable question string"""
+        wrapper = textwrap.TextWrapper(initial_indent = " ",
         question_string = " " + self.question + "\n"
         if self.options != None:
             for index,  option in enumerate(self.options):
@@ -213,7 +214,28 @@ class Problem:  # pylint: disable=I0011,R0902
 
         return question_string
 
+class Singleton(type):
+    _instances = {}
+    def __call__(cls, *args, **kwargs):
+        if cls not in cls._instances:
+            cls._instances[cls] = super(Singleton, cls).__call__(*args, **kwargs)
+        else:
+            cls._instances[cls].__init__(*args, **kwargs)
+        return cls._instances[cls]
+        
 
+class Text_wrapper:
+    __metaclass__ = Singleton
+
+    def __init__(self, text):
+        if not self.wrapper:
+            self.wrapper = textwrap.TextWrapper(initial_indent = " ",
+                                                subsequent_indent = " ",
+                                                width=80).wrap
+        for line in self.wrapper(text):
+            yield line
+
+        
 
 def clear_screen():
     """Clear the terminal screen"""
