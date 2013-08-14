@@ -45,6 +45,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+em {
+    font-style: italic
+}
 
 /* LAYOUT STYLES */
 body {
