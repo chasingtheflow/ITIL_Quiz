@@ -48,6 +48,9 @@ table {
 em {
     font-style: italic
 }
+strong {
+    font-weight: bold
+}
 
 /* LAYOUT STYLES */
 body {
