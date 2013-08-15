@@ -4,7 +4,7 @@ A little python utility for ITIL v3 Foundations practice exams.
 
 Installation
 ------------
-For installation instructions visit [the project site](http://chasingtheflow.github.io/ITIL_Quiz/).
+For installation instructions visit [the project page](http://chasingtheflow.github.io/ITIL_Quiz/).
 
 Creating Quizzes
 ----------------
