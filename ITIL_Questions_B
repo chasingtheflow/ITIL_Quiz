@@ -1,0 +1,332 @@
+Q: Input from which processes could be considered by service level management when negotiating service level agreements (SLAs)?
+1. All other ITIL processes
+2. Capacity management and availability management only
+3. Incident management and problem management only
+4. Change management and release and deployment management only
+A: 1
+E: Representatives of all other processes need to be consulted for their opinion on what targets can be realistically achieved.
+
+Q: Which one of the following statements about a standard change is INCORRECT?
+1. They are pre-authorized by change management
+2. They follow a procedure or work instruction
+3. They are low risk
+4. They must be implemented as soon as possible
+A: 4
+E: Standard changes would not normally need to be implemented as soon as was possible, whereas emergency changes would. 
+
+Q: Which of the following statements about the service desk are CORRECT?
+O: It provides a single point of contact between the service provider and users | It manages incidents and service requests | It is a service management process | Service desk staff try to restore service as quickly as possible
+1. All of the above
+2. 1, 2, and 4 only
+3. 2 and 4 only
+4. 2 and 3 only
+A: 2
+E: The service desk is a function and not a process.
+
+Q: Which of the following statements about functions are CORRECT?
+O: They may include tools | They are groups that use resources to carry out one or more activities | One person or group may perform multiple functions | They are most costly to implement compared to processes
+1. 1, 2, and 3 only
+2. 1, 2, and 4 only
+3. All of the above
+4. None of the above
+A: 1
+E: Functions are not described as being more costly than processes and this would depend on the function or process being considered.
+
+Q: Which one of the following is the BEST description of the activities carried out by facilities management?
+1. The management of IT services that are viewed as "utilities", such as printers or network access
+2. Advice and guidance to IT operations on methodology and tools for managing IT services
+3. Management of the physical IT environment such as a data center or computer room
+4. The procurement and maintenance of tools that are used by IT operations staff to maintain the infrastructure
+A: 3
+E: Facilities management refers to the management of the physical IT environment, typically a data center or computer room.
+
+Q: Which process would assist with the identification and resolution of any incidents and problems associated with service or component performance?
+1. Capacity management
+2. Supplier management
+3. Technology management
+4. Change management
+A: 1
+E: Performance issues are within the scope of capacity management.
+
+Q: Which one of the following statements about the known error database (KEDB) is MOST correct?
+1. The KEDB is the same database as the service knowledge management system (SKMS)
+2. The KEDB should be used during the incident diagnosis phase to try to speed up the resolution process
+3. Care should be taken to avoid duplication of records in the KEDB. This can be done by giving access to as many technicians as possible to create new records
+4. Access to the KEDB should be limited to the service desk
+A: 2
+E: A - the KEDB is part of the SKMS, NOT the same thing. S is correct. D - Duplication should be avoided but by RESTRICTING access. F - Yes, the service desk should use it but they are NOT the only ones.
+
+Q: Which of the following statements about key performance indicators (KPIs) and metrics are CORRECT?
+O: Service metrics measure the end-to-end service | Each PI should relate to a critical success factor | Metrics can be used to identify improvement opportunities | KPIs can be both qualitative and quantitative
+1. 1 only
+2. 2 and 3 only
+3. 1, 2, and 4 only
+4. All of the above
+A: 4
+E: Each statement is a summary of the book content.
+
+Q: Which one of the following maintains relationships between all service components?
+1. The capacity plan
+2. The definitive media library
+3. The configuration management system
+4. A service level agreement
+A: 3
+E: The configuration management system (CMS) is responsible via its various data sources (CDMBs, etc.) for maintaining these relationships.
+
+Q: Should a customer's request for a new service ALWAYS be fulfilled?
+1. Yes - if they are an external customer as they are paying for the service
+2. No - if they are an internal customer as they are not always paying for the service
+3. No - it is the responsibility of the service provider to carry out due diligence before requests are fulfilled
+4. Yes - the service provider should ensure that all requests for new services are fulfilled
+A: 3
+E: The service provider should ensure due diligence is carried out against the customer's requirements, irrespective of whether they are internal or external customers.
+
+Q: Which of the following statements is/are CORRECT?
+O: Problem management can support the service desk by providing known errors to speed up incident resolution | Problem management is the only source of information to service level management about the impact of changes
+1. 1 only
+2. 2 only
+3. Both of the above
+4. Neither of the above
+A: 1
+E: Problem management is the source of known errors but change and service asset and configuration management are likely to be other sources of information about the impact of changes.
+
+Q: A failure has occurred on a system and is detected by a monitoring tool. This system supports a live IT service. When should an incident be raised?
+1. Only when users notice the failure
+2. An incident should not be raised if the technicians have seen this before and have a workaround
+3. Only if the failure results in a service level being breached
+4. Immediately, to limit or prevent impact on users
+A: 4
+E: A - There do not need to be discernible impacts to the user for an incident to be raised. S - Even if a workaround is available it needs to be recorded to measure any on-going impact of the incident. D - All incidents must be recorded. F - Correct, in order to prevent loss of service or to restore service as soon as possible.
+
+Q: Which of the following could be considered stakeholders in a service management project?
+O: Users | Customers | Suppliers | Functions
+1. 1 and 2 only
+2. 3 and 4 only
+3. 2 and 4 only
+4. All of the above
+A: 4
+E: F is the correct response. Stakeholders can be both internal and external entities. An example of a function as a stakeholder could be the service desk, technical management, or application management functions.
+
+Q: Which of the following activities does service asset and configuration management ensure are performed?
+O: Configuration items (CIs) are identified | CIs are baselined | Changes to CIs are controlled
+1. All of the above
+2. 1 and 2 only
+3. 1 and 3 only
+4. 2 and 3 only
+A: 1
+E: All activities are part of the scope of service asset and configuration management. 
+
+Q: Which of the following aspects of service design should be considered when designing a service solution?
+O: Measurement methods and metrics | Management information systems and tools | Technology architectures | The processes required
+1. 1 and 2 only
+2. 2 and 3 only
+3. 2, 3, and 4 only
+4. All of the above
+A: 4
+E: All of these items are aspects of service design. 
+
+Q: Which of the following statements is CORRECT for ALL processes?
+1. They define functions as part of their design
+2. They deliver results to a customer or stakeholder
+3. They are carried out by an external service provider in support of a customer
+4. They are units of organizations responsible for specific outcomes
+A: 2
+E: A - Process design would involve allocation of activities to functions but not their definition. S - Correct, processes deliver results or they would not be worthwhile. D - Not ALL processes are carried out by external providers. F - Is a description of a function.
+
+Q: Which process is primarily responsible for packaging, building, testing, and deploying services?
+1. Transition planning and support
+2. Release and deployment management
+3. Service asset and configuration
+4. Service catalog management
+A: 2
+E: All are activities performed by release and deployment management.
+
+Q: Which one of the following is the BEST example of a workaround?
+1. A technician installs a script to temporarily divert prints to an alternative printer until a permanent fix is applied
+2. A technician tries several ways to solve an incident. One of them works, although they do not know which one
+3. After reporting the incident to the service desk, the user works on alternative tasks while the problem is identified and resolved
+4. A device works intermittently, allowing the user to continue working at degraded levels of performance while the technician diagnoses the incident
+A: 1
+E: A is a good example of a workaround which is not a permanent solution but which overcomes the original incident. S is a 'lucky' incident resolution and unlikely to be repeatable. D does not allow the user to continue with their original task. F is an incident under investigation. 
+
+Q: Which of the following areas can be helped by technology?
+O: Request management | Service catalog management | Detection and monitoring | Design and modeling
+1. 1, 2, and 3 only
+2. 1, 3, and 4 only
+3. 2, 3, and 4 only
+4. All of the above
+A: 4
+E: All four areas can be assisted by technology.
+
+Q: Which one of the following is the CORRECT list of stages in the Deming Cycle?
+1. Plan, Measure, Monitor, Report
+2. Plan, Check, Re-act, Implement
+3. Plan, Do, Act, Audit
+4. Plan, Do, Check, Act
+A: 4
+E: The four key stages of the cycle are Plan, Do, Check, and Act.
+
+Q: Which two processes will be involved the MOST in negotiating and agreeing contracts for the provision of recovery capability to support continuity plans?
+1. Service level management and capacity management
+2. Supplier management and service level management
+3. IT service continuity management and service level management
+4. IT service continuity management and supplier management
+A: 3
+E: ITSC provides the subject matter expertise and supplier management provides the contract negotiation and selection process. SLM also has a role in underpinning contracts but is not as significant in this respect as the other two processes. 
+
+Q: Which one of the following is the BEST definition of an incident model?
+1. The template that defines the incident logging form used for reporting incidents
+2. A type of incident involving a standard (or model) type of configuration item (CI)
+3. A set of pre-defined steps to be followed when dealing with a known type of incident
+4. An incident that is easy to solve
+A: 3
+E: D matches the description of an incident model.
+
+Q: What roles are defined in the RACI model?
+1. Responsible, Accountable, Consulted, Informed
+2. Responsible, Achievable, Consulted, Informed
+3. Realistic, Accountable, Consulted, Informed
+4. Responsible, Accountable, Corrected, Informed
+A: 1
+E: Roles are Responsible, Accountable, Consulted, Informed.
+
+Q: Which stage of the service lifecycle decides what services should be offered and to whom they will be offered?
+1. Continual service improvement
+2. Service operation
+3. Service design
+4. Service strategy
+A: 4
+E: Deciding what services should be offered and to whom is an integral part of service strategy.
+
+Q: Which of the following does continual service improvement (CSI) provide guidance on?
+O: How to improve process efficiency and effectiveness | How to improve services | Improvement of all stages of the service lifecycle
+1. 1 and 2 only
+2. 1 and 3 only
+3. 2 and 3 only
+4. All of the above
+A: 4
+E: 1. CSI looks for ways to improve process effectiveness and efficiency, as well as cost effectiveness. 2. CSI identifies and implements improvements to IT services. 3. CSI improvement activities support each lifecycle stage: service strategy, service design, service transition, service operation, and CSI itself. 
+
+Q: Which of the following is a type of service level agreement (SLA) described in the ITIL service design publication?
+1. Priority-based SLA
+2. Technology-based SLA
+3. Location-based SLA
+4. Customer-based SLA
+A: 4
+E: Priority-based, technology-based, and location-based SLAs are not discussed in service design. 
+
+Q: Which one of the following is the BEST definition of an event?
+1. An occurrence where a performance threshold has been exceeded and an agreed service level has been impacted
+2. A change of state that has significance for the management of an IT service
+3. A known system defect that generates multiple incident reports
+4. A planned meeting of customers and IT staff to announce a new service or improvement program
+A: 2
+E: A and D may cause an event to be generated. F is a meeting. S closely matches the definition of an event in service operation.
+
+Q: Which one of the following is the MOST appropriate stakeholder to define the value of a service?
+1. Customers
+2. IT Senior management
+3. Financial management for IT services
+4. Suppliers
+A: 1
+E: Value is viewed as the level to which the service meets customer's expectations and therefore they make the ultimate decision on whether the service will drive value.
+
+Q: Which of the following should be treated as an incident?
+O: A user is unable to access a service during service hours | An authorized IT staff member is unable to access a service during service hours | A network component fails but the user is not aware of any disruption to service | A user contacts the service desk about the slow performance of an application
+1. All of the above
+2. 1 and 4 only
+3. 2 and 3 only
+4. None of the above
+A: 1
+E: An incident is 'an unplanned interruption to an IT service or reduction in the quality of an IT service or a failure of a CI that has not yet impacted an IT service'. The inability to access an IT service as agreed is an unplanned interruption from the user's perspective.
+
+Q: Which one of the following statements about a change model is CORRECT?
+1. A change model should NOT be used for emergency changes
+2. A change model should be constructed when a significant change is required
+3. A change model defines the steps that should be taken to handle a particular type of change
+4. Escalation procedures are outside the scope of a change model
+A: 3
+E: A - A change model can be used for emergency changes. S - Change models would not routinely be created when significant changes are made. D is correct. F - Escalation procedures can be included in a change model. 
+
+Q: The CSI approach uses a number of techniques. Which one of the following techniques would BEST help a business understand "where we are now?"?
+1. Reviewing critical success factors
+2. Understanding the business vision
+3. Performing a baseline assessment
+4. Checking the CSI register
+A: 3
+E: Understanding "where we are now" requires a business to create a baseline.
+
+Q: Which service operation processes are missing from the following list?
+O: Incident management | Problem management | Access management | ? | ?
+1. Event management and request fulfillment
+2. Event management and service desk
+3. Facilities management and event management
+4. Change management and service level management
+A: 1
+E: All of the service operation processes are covered by the syllabus. The correct answer is A, S is a process and a function, D is a function and a process, F are processes in service transition and service design. 
+
+Q: Which stage of the service lifecycle provides a framework for evaluating service capabilities and risk profiles before new or changed services are deployed? 
+1. Service strategy
+2. Continual service improvement
+3. Service transition
+4. Service operation
+A: 3
+E: Service transition is responsible for this part of the deployment of new services.
+
+Q: Which of the following activities should a service owner undertake?
+O: Representing a specific service across the organization | Updating the configuration management system (CMS) after a change | Helping to identify service improvements | Representing a specific service in change advisory board (CAB) meetings
+1. 2, 3, and 4 only
+2. All of the above
+3. 1, 2, and 3 only
+4. 1, 3, and 4 only
+A: 4
+E: 1, 3, and 4 are all responsibilities of the service owner role. Option 2 is the responsibility of the configuration librarian/administrator.
+
+Q: Which one of the following is NOT a purpose of objective of availability management?
+1. To monitor and report on the availability of components
+2. To ensure that service availability matches the agreed needs of the business
+3. To assess the impact of changes on the availability plan
+4. To ensure that business continuity plans are aligned to business objectives
+A: 4
+E: F is the responsibility of IT service continuity management.
+
+Q: Which one of the following is a CORRECT description of the 'four Ps' of service design?
+1. A four-step process for the design of effective service management
+2. A definition of the people and products required for successful design
+3. A set of questions that should be asked when reviewing design specifications
+4. Four major areas that need to be considered during service design
+A: 4
+E: 1 - The 'Four Ps' are not a process. 2 - Has some merit but only addresses two of the four areas. 3 - The four Ps are not a checklist or set of questions.
+
+Q: Which one of the following BEST describes a major problem review?
+1. Facilitated by the problem manager, a major problem review is designed to apportion blame after a resolution to the problem has been found
+2. A major problem review is run as part of the change advisory board (CAB) by the change manager. It is conducted after the request for change (RFC) to resolve the problem has been accepted
+3. A major problem review is facilitated by the service desk manager so that lessons can be learned after a major problem has been resolved
+4. Facilitated by the problem manager, the review is conducted so that lessons can be learned from the major problem, and to provide training and awareness for support staff
+A: 4
+E: F is the book answer. A is the right role, but it is not about apportioning blame. S is incorrect. D is plausible but is facilitated by the wrong role.
+
+Q: Which one of the following statements about supplier management is INCORRECT?
+1. Supplier management negotiates operational level agreements (OLAs)
+2. Supplier management ensures that suppliers meet business expectations
+3. Supplier management maintains information in a supplier and contractor management information system
+4. Supplier management negotiates external agreements to support the delivery of services
+A: 1
+E: All are objectives of the supplier management process, except A which is undertaken by service level management.
+
+Q: Which one of the following is a primary purpose of business relationship management?
+1. Carrying out operational activities to support services
+2. Ensuring all targets within service level agreements are met
+3. Maximizing contract value and operational efficiency of the services that are delivered
+4. Understanding the customer's needs and ensuring they are met
+A: 4
+E: To identify customer needs and ensure that the service provider is able to meet these needs.
+
+Q: Which one of the following statements is an objective of the design coordination process?
+1. To ensure that service availability targets are met
+2. To define, document, agree, monitor, measure, and review service levels
+3. To provide and maintain a single source of consistent information on all operational services
+4. To monitor and improve the performance of the service design lifecycle stage
+A: 4
+E: F is the correct answer. D is the purpose of service catalog management. S is an objective of service level management. A is an objective of availability management.
+
