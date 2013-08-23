@@ -1,4 +1,4 @@
-#! usr/bin/env python2.7
+#!/usr/bin/env python2.7
 # pylint: disable-msg=I0011,R0903,R0913
 """
 A little cmd line app for studying ITIL
