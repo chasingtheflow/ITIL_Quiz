@@ -330,3 +330,18 @@ Q: Which one of the following statements is an objective of the design coordinat
 A: 4
 E: F is the correct answer. D is the purpose of service catalog management. S is an objective of service level management. A is an objective of availability management.
 
+Q: Which of the following is not a step in the Continual Service Improvement (CSI) model?
+1. What is the vision?
+2. Did we get there?
+3. Is there budget?
+4. Where are we now?
+A: 2
+E: The answer to this question is C.) Is there a budget? The ITIL stage CSI (Continual Service Improvement) is a form of quality management to correct past mistakes and improve previous successes of a company. The first step is to review the services. This is to help and improve the service and to identify more effective and economical ways to provide it. By economical means, the budget is not necessary.
+
+Q: Which of the following is not the responsibility of a service catalogue manager?
+1. Ensuring the information in the Service Catalogue is accurate
+2. Ensuring the information within the Service Pipeline is accurate
+3. Ensuring that the information in the Service Catalogue is consistent with information in the Portfolio
+4. Ensuring that all operational services are recorded in the Service Catalogue
+A: 1
+E: The responsibilities include ensuring the information in the catalogue is accurate, the information in the catalogue is consistent with that in the Portfolio and that all of the operational services are recorded in the catalogue. Making sure the information in the service pipeline is accurate is not part of the responsibility of the service catalogue manager.
